@@ -342,7 +342,7 @@ void ScintillaEditBase::wheelEvent(QWheelEvent *event)
 				}
 				QQuickPaintedItem::wheelEvent(event);
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#ifdef PLAT_QT_QML
                 update();
 #endif
 #else
