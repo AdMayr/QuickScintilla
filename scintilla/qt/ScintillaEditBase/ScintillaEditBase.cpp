@@ -342,9 +342,7 @@ void ScintillaEditBase::wheelEvent(QWheelEvent *event)
 				}
 				QQuickPaintedItem::wheelEvent(event);
 
-#ifdef PLAT_QT_QML
                 update();
-#endif
 #else
 				QAbstractScrollArea::wheelEvent(event);
 			}
